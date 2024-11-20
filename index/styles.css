@@ -1,0 +1,188 @@
+/* اتجاه الصفحة من اليمين إلى اليسار */
+body {
+    direction: rtl;
+    text-align: right; /* محاذاة النصوص لليمين */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 80px; /* مساحة أسفل الصفحة لذيل الصفحة */
+    background-color: white;
+}
+
+/* تنسيق header */
+header {
+    background-color: black; /* لون كحلي داكن */
+    color: #fff;
+    padding: 15px;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* توسيط المحتوى في الرأس */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    text-align: center; /* توسيط العنوان */
+}
+
+.header-nav {
+    display: flex;
+    justify-content: center; /* توسيط الأزرار في الرأس */
+    gap: 10px; /* مسافة بين الأزرار */
+    margin-top: 10px; /* مسافة بين العنوان وأزرار التنقل */
+}
+
+.nav-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:skyblue; /* لون فاتح */
+    color: black; /* لون كحلي داكن للنص */
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-button:hover {
+    background-color: #b2ebf2; /* لون فاتح عند التمرير */
+    color: #002244; /* لون كحلي أغمق للنص عند التمرير */
+}
+
+section {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin: 20px;
+}
+
+/* إضافة إطار حول كل قسم مع حواف حادة */
+.section-container {
+    border-top: 4px solid black; /* إطار بلون كحلي داكن */
+    border-radius: 0; /* إزالة الاستدارة لجعل الحواف حادة */
+    padding: 0px;
+    background-color: skyblue;
+    margin-bottom: 0px;
+}
+
+/* تنسيق ترويسة القسم */
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* تنسيق عناصر التحكم في الترويسة */
+.header-controls {
+    display: flex;
+    align-items: center;
+}
+
+.show-all {
+    padding: 8px 15px;
+    background-color: #003366;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.show-all:hover {
+    background-color: #002244;
+}
+
+/* تنسيق شريط الكاروسيل */
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 10px;
+    gap: 20px;
+    white-space: nowrap;
+    scrollbar-width: thin;
+    scrollbar-color: #003366 #e0f7fa;
+}
+
+.carousel::-webkit-scrollbar {
+    width: 8px;
+}
+
+.carousel::-webkit-scrollbar-thumb {
+    background-color: #003366;
+    border-radius: 10px;
+}
+
+.carousel::-webkit-scrollbar-track {
+    background-color: #e0f7fa;
+}
+
+/* خلفية شريط الأدوات */
+.tools-carousel {
+    background-color: skyblue; /* لون أزرق رمادي */
+}
+
+/* خلفية شريط الألعاب */
+.games-carousel {
+    background-color: skyblue; /* لون أزرق رمادي */
+}
+
+.carousel-item {
+    display: inline-block;
+    flex: 0 0 auto;
+    width: 250px;
+    height: 320px;
+    background-color: #e0f7fa;
+    border: 2px solid #00bcd4;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+}
+img{
+     width: 220px;
+    height: 220px;
+}
+/* تنسيق الروابط لتظهر كأزرار */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #003366; /* لون كحلي داكن */
+    color: #fff;
+    font-size: 16px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.button:hover {
+    background-color: #002244; /* لون كحلي أغمق */
+}
+
+/* تنسيق footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-top: 3px solid #ddd;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}

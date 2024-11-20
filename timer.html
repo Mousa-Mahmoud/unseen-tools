@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المؤقت و العداد</title>
+    <link rel="stylesheet" href="timer/timer.css">
+</head>
+<body>
+    <header>
+        <h1>المؤقت و العداد</h1>
+        <a href="index.html" class="home-button">الصفحة الرئيسية</a>
+    </header>
+    <main>
+        <div class="frame-container">
+            <div class="frame">
+                <h2>المؤقت</h2>
+                <div id="timer">
+                    <div id="timer-display">00:00:00</div>
+                    <div class="timer-controls">
+                        <button id="start-timer">ابدأ</button>
+                        <button id="stop-timer">توقف</button>
+                        <button id="reset-timer">إعادة تعيين</button>
+                    </div>
+                </div>
+            </div>
+            <div class="frame">
+                <h2>العداد</h2>
+                <div id="countdown">
+                    <div class="countdown-inputs">
+                        <input type="number" id="hours" placeholder="ساعات" min="0">
+                        <input type="number" id="minutes" placeholder="دقائق" min="0">
+                        <input type="number" id="seconds" placeholder="ثواني" min="0">
+                    </div>
+                    <div id="countdown-display">00:00:00</div>
+                    <div class="countdown-controls">
+                        <button id="set-time">حدد الوقت</button>
+                        <button id="start-countdown">ابدأ</button>
+                        <button id="stop-countdown">توقف</button>
+                        <button id="reset-countdown">إعادة تعيين</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>شكراً لزيارتك لموقعنا!</p>
+    </footer>
+    <script src="timer/timer.js"></script>
+</body>
+</html>
